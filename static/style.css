@@ -1,3 +1,12 @@
 body {
     box-shadow: 0 0 20px 20px #00000003 inset !important;
 }
+
+.page-wrapper {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.border-dashed {
+    border-style: dashed !important;
+}
