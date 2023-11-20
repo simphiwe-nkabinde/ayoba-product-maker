@@ -8,5 +8,5 @@
         </p>        
     </div>
 
-    <button class="btn btn-outline-dark rounded-0">Get Started</button>
+    <a href="login" class="btn btn-outline-dark rounded-0">Get Started</a>
 </div>

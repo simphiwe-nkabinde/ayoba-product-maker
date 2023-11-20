@@ -10,3 +10,6 @@ body {
 .border-dashed {
     border-style: dashed !important;
 }
+.drop-shadow {
+    filter: drop-shadow(0rem .5rem 1rem #00000030);
+}
