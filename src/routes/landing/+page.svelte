@@ -4,11 +4,12 @@
     import StepOne from "../../components/+StepOne.svelte";
     import StepThree from "../../components/+StepThree.svelte";
     import StepTwo from "../../components/+StepTwo.svelte";
+    import logo from '$lib/assets/logo.png';
 </script>
 
 <section>
     <div style="height: 15vh;" class="container d-flex p-2 align-items-center justify-content-center">
-        <img src="logo.png" width="40" height="40" alt="" />
+        <img src={logo} width="40" height="40" alt="" />
         <h1 style="color: #338a93;" class="ms-2 display-1 fw-semibold mb-0">
             WorkShop
         </h1>

@@ -1,6 +1,7 @@
 <script>
     import Header from "../../../components/+Header.svelte";
     import Navigation from "../../../components/+Navigation.svelte";
+    import logo from '$lib/assets/logo.png';
 </script>
 
 <div class="page-wrapper bg-light">
@@ -12,19 +13,19 @@
         </button>
         <div class="col text-center mb-3">
             <div>
-                <img src="logo.png" class="img-fluid" alt="" />
+                <img src={logo} class="img-fluid" alt="" />
             </div>
             <p class="mb-0">first application</p>
         </div>
         <div class="col text-center mb-3">
             <div>
-                <img src="logo.png" class="img-fluid" alt="" />
+                <img src={logo} class="img-fluid" alt="" />
             </div>
             <p class="mb-0">first application</p>
         </div>
         <div class="col text-center mb-3">
             <div>
-                <img src="logo.png" class="img-fluid" alt="" />
+                <img src={logo} class="img-fluid" alt="" />
             </div>
             <p class="mb-0">second application</p>
         </div>

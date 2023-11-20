@@ -1,5 +1,8 @@
+<script>
+  import logo from '$lib/assets/logo.png';
+</script>
 <div style="height: 15vh;" class="container d-flex p-2 align-items-center justify-content-center">
-    <img src="logo.png" class="border rounded" width="40" height="40" alt="" />
+    <img src={logo} class="border rounded" width="40" height="40" alt="" />
     <h1 class="ms-2 display-1 fw-semibold mb-0">
         WorkShop
     </h1>
