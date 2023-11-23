@@ -2,7 +2,7 @@
     import logo from "$lib/assets/logo.png";
 </script>
 
-<section class="row row-cols-2 align-content-start px-4 py-4">
+<main class="row row-cols-2 align-content-start px-4 py-4">
     <div class="col">
         <a
             href="microapps/create"
@@ -32,4 +32,4 @@
         </div>
         <p class="mb-0">second application</p>
     </div>
-</section>
+</main>

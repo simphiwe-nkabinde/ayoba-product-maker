@@ -12,7 +12,7 @@
 
 <button class="btn border-dark w-100 text-start mb-3 p-3">
     {#if !expanded}
-        <div on:click={() => (expanded = true)}>+ Add</div>
+        <div on:click={() => (expanded = true)}>+ Add Product</div>
     {:else}
         <div transition:slide class="">
             <div class="mb-3">

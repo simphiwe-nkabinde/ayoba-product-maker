@@ -1,5 +1,13 @@
 <script>
+    import { goto } from "$app/navigation";
     import logo from "$lib/assets/logo.png";
+    import { onMount } from "svelte";
+
+    onMount(() => {
+        setTimeout(() => {
+            goto("landing").catch((err) => console.log(err));
+        }, 3000);
+    });
 </script>
 
 <div
