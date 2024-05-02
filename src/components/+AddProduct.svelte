@@ -1,11 +1,12 @@
 <script>
     import { slide } from "svelte/transition";
+    import ProductImage from "./+ProductImage.svelte";
 
     let categories = ["men", "women", "teens", "summer"];
-    let expanded = false;
+    let expanded = true;
 
-    let name = '';
-    let description = ''
+    let name = "";
+    let description = "";
     let price = 0;
     let qty = 1;
 </script>
@@ -26,30 +27,23 @@
             </div>
             <label class="form-label">product images</label>
             <div class="mb-3 row row-cols-3 justify-content-around">
-                <div
-                    class="col border border-dark upload-block rounded-3 display-5 fw-bold"
-                >
-                    <i class="bi bi-plus-lg" />
-                </div>
-                <div
-                    class="col border border-dark upload-block rounded-3 display-5 fw-bold"
-                >
-                    <i class="bi bi-plus-lg" />
-                </div>
-                <div
-                    class="col border border-dark upload-block rounded-3 display-5 fw-bold"
-                >
-                    <i class="bi bi-plus-lg" />
-                </div>
+                <ProductImage />
+                <ProductImage />
+                <ProductImage />
             </div>
             <div class="mb-3">
                 <label for="description" class="form-label">Descriptipn</label>
-                <textarea bind:value={description} class="form-control" id="description" rows="3" />
+                <textarea
+                    bind:value={description}
+                    class="form-control"
+                    id="description"
+                    rows="3"
+                />
             </div>
             <div class="mb-3 row">
                 <label for="price" class="form-label col-3">Price</label>
                 <input
-                bind:value={price}
+                    bind:value={price}
                     type="number"
                     class="form-control form-control-sm w-50"
                     id="price"
@@ -69,7 +63,7 @@
             <div class="mb-3 row">
                 <label for="qty" class="form-label col-3">Quatity</label>
                 <input
-                bind:value={qty}
+                    bind:value={qty}
                     type="number"
                     class="form-control form-control-sm w-50"
                     id="qty"
@@ -85,14 +79,3 @@
         </div>
     {/if}
 </button>
-
-<style>
-    .upload-block {
-        aspect-ratio: 1/1;
-        width: 25%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-    }
-</style>
